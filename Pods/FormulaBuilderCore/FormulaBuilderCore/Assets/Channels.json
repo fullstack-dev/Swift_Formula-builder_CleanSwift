@@ -1,0 +1,49 @@
+ [{
+  "chinese": "膽",
+  "english": "Gallbladder",
+  "icon": "gall_bladder"},
+  {
+  "chinese": "心",
+  "english": "Heart",
+  "icon": "heart"},
+  {
+  "chinese": "腎",
+  "english": "Kidney",
+  "icon": "kidney"},
+  {
+  "chinese": "大肠",
+  "english": "Large Intestine",
+  "icon": "large_intestine"},
+  {
+  "chinese": "肝",
+  "english": "Liver",
+  "icon": "liver"},
+  {
+  "chinese": "肺",
+  "english": "Lung",
+  "icon": "lung"},
+  {
+  "chinese": "心包",
+  "english": "Pericardium",
+  "icon": "pericardium"},
+  {
+  "chinese": "小肠",
+  "english": "Small Intestine",
+  "icon": "small_intestine"},
+  {
+  "chinese": "脾",
+  "english": "Spleen",
+  "icon": "spleen"},
+  {
+  "chinese": "胃",
+  "english": "Stomach",
+  "icon": "stomach"},
+  {
+  "chinese": "三焦",
+  "english": "Triple Burner",
+  "icon": "triple_burner"},
+  {
+  "chinese": "膀胱",
+  "english": "Bladder",
+  "icon": "urinary_bladder"}
+  ]

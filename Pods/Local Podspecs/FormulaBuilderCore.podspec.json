@@ -1,0 +1,41 @@
+{
+  "name": "FormulaBuilderCore",
+  "version": "0.0.12",
+  "summary": "The shared core of Formula Builder",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://bitbucket.org/plumflowerteam/formulabuildercore",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ty Sang": "ty@plumflowerinternational.com"
+  },
+  "source": {
+    "git": "git@bitbucket.org:plumflowerteam/formulabuildercore.git",
+    "tag": "0.0.12"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "FormulaBuilderCore/**/*",
+  "resource_bundles": {
+    "FBCore": [
+      "FormulaBuilderCore/Assets/system.realm",
+      "FormulaBuilderCore/Assets/Formulas.json",
+      "FormulaBuilderCore/Assets/Herbs.json",
+      "FormulaBuilderCore/Assets/Channels.json"
+    ]
+  },
+  "dependencies": {
+    "Alamofire": [
+      "~>4.0"
+    ],
+    "RealmSwift": [
+
+    ],
+    "SwiftyJSON": [
+
+    ]
+  }
+}

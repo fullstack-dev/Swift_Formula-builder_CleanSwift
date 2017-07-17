@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FBAddAlternateCell" customModule="FormulaBuilderCS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHA-o6-rmb">
+                        <rect key="frame" x="54" y="12" width="78.5" height="19"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                        <color key="textColor" red="0.56078431370000004" green="0.5568627451" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_add" translatesAutoresizingMaskIntoConstraints="NO" id="P5Y-Hz-ZF5">
+                        <rect key="frame" x="16" y="10" width="22" height="22"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DX-M4-1nB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <connections>
+                            <action selector="action:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cUP-cW-1Eh"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="P5Y-Hz-ZF5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1EM-JE-igA"/>
+                    <constraint firstItem="MHA-o6-rmb" firstAttribute="leading" secondItem="P5Y-Hz-ZF5" secondAttribute="trailing" constant="16" id="9ZY-ei-49K"/>
+                    <constraint firstItem="MHA-o6-rmb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Lsn-dW-oYu"/>
+                    <constraint firstItem="9DX-M4-1nB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="g7Z-8X-3yw"/>
+                    <constraint firstAttribute="trailing" secondItem="9DX-M4-1nB" secondAttribute="trailing" id="gdF-4a-vvc"/>
+                    <constraint firstAttribute="bottom" secondItem="9DX-M4-1nB" secondAttribute="bottom" id="iOe-aP-nXx"/>
+                    <constraint firstItem="P5Y-Hz-ZF5" firstAttribute="centerY" secondItem="MHA-o6-rmb" secondAttribute="centerY" id="k3q-Kk-BZI"/>
+                    <constraint firstItem="9DX-M4-1nB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qYd-70-GCo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLbl" destination="MHA-o6-rmb" id="1PV-dX-a2s"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile_add" width="22" height="22"/>
+    </resources>
+</document>

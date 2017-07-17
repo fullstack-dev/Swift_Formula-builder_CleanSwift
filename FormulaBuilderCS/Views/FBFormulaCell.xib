@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FBFormulaCell" id="KGk-i7-Jjw" customClass="FBFormulaCell" customModule="FormulaBuilderCS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ex-1G-col">
+                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="XtW-Ef-aoA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chinese | Latin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1h-Ja-5ec">
+                        <rect key="frame" x="0.0" y="23" width="76.5" height="20"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jF3-91-YAK">
+                        <rect key="frame" x="252" y="4" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="jF3-91-YAK" secondAttribute="height" multiplier="1:1" id="e9z-2x-w3d"/>
+                            <constraint firstAttribute="width" constant="35" id="ibB-8z-yjB"/>
+                        </constraints>
+                        <state key="normal" image="favorite"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjn-Aa-Afg">
+                        <rect key="frame" x="217" y="4" width="35" height="35"/>
+                        <state key="normal" image="lock"/>
+                        <connections>
+                            <action selector="lockButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6re-NR-z5A"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0n-7c-fBg">
+                        <rect key="frame" x="177" y="4" width="35" height="35"/>
+                        <state key="normal" image="eye"/>
+                        <state key="selected" image="eye_selected"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyb-Ya-DbH" customClass="FBNumberLabel" customModule="FormulaBuilderCS" customModuleProvider="target">
+                        <rect key="frame" x="81.5" y="12" width="85.5" height="19"/>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rjn-Aa-Afg" firstAttribute="top" secondItem="N0n-7c-fBg" secondAttribute="top" id="2cS-j9-Xqx"/>
+                    <constraint firstItem="jF3-91-YAK" firstAttribute="top" secondItem="N0n-7c-fBg" secondAttribute="top" id="61c-1B-GvA"/>
+                    <constraint firstItem="Rjn-Aa-Afg" firstAttribute="leading" secondItem="N0n-7c-fBg" secondAttribute="trailing" constant="5" id="6ou-Gi-ilc"/>
+                    <constraint firstItem="N0n-7c-fBg" firstAttribute="leading" secondItem="kyb-Ya-DbH" secondAttribute="trailing" constant="10" id="74R-4f-Bx1"/>
+                    <constraint firstItem="jF3-91-YAK" firstAttribute="width" secondItem="N0n-7c-fBg" secondAttribute="width" id="AeZ-D1-X8I"/>
+                    <constraint firstItem="Rjn-Aa-Afg" firstAttribute="width" secondItem="N0n-7c-fBg" secondAttribute="width" id="Az2-SX-Ttn"/>
+                    <constraint firstItem="6ex-1G-col" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fcs-un-GbP"/>
+                    <constraint firstItem="kyb-Ya-DbH" firstAttribute="leading" secondItem="6ex-1G-col" secondAttribute="trailing" constant="5" id="NzP-ox-kTc"/>
+                    <constraint firstItem="Rjn-Aa-Afg" firstAttribute="height" secondItem="N0n-7c-fBg" secondAttribute="height" id="aqo-wF-1gd"/>
+                    <constraint firstItem="A1h-Ja-5ec" firstAttribute="leading" secondItem="6ex-1G-col" secondAttribute="leading" id="bLr-t3-0Mp"/>
+                    <constraint firstAttribute="bottom" secondItem="A1h-Ja-5ec" secondAttribute="bottom" id="d3c-14-5VS"/>
+                    <constraint firstAttribute="trailing" secondItem="jF3-91-YAK" secondAttribute="trailing" id="eCO-gE-Xv8"/>
+                    <constraint firstItem="A1h-Ja-5ec" firstAttribute="top" secondItem="6ex-1G-col" secondAttribute="bottom" id="eXc-qu-IL6"/>
+                    <constraint firstItem="jF3-91-YAK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="enh-aK-Kcr"/>
+                    <constraint firstItem="A1h-Ja-5ec" firstAttribute="width" secondItem="6ex-1G-col" secondAttribute="width" id="im2-bM-K5y"/>
+                    <constraint firstItem="6ex-1G-col" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jFE-j4-1pO"/>
+                    <constraint firstItem="jF3-91-YAK" firstAttribute="centerY" secondItem="kyb-Ya-DbH" secondAttribute="centerY" id="vfJ-tM-9UM"/>
+                    <constraint firstItem="jF3-91-YAK" firstAttribute="leading" secondItem="Rjn-Aa-Afg" secondAttribute="trailing" id="wQB-z4-QR7"/>
+                    <constraint firstItem="jF3-91-YAK" firstAttribute="height" secondItem="N0n-7c-fBg" secondAttribute="height" id="we4-X6-O29"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chineseAndLatinLabel" destination="A1h-Ja-5ec" id="omw-h0-LIV"/>
+                <outlet property="eyeButton" destination="N0n-7c-fBg" id="6ER-UO-a0k"/>
+                <outlet property="favoriteButton" destination="jF3-91-YAK" id="g10-aN-8Rq"/>
+                <outlet property="lockButton" destination="Rjn-Aa-Afg" id="1tk-TZ-tZs"/>
+                <outlet property="nameLabel" destination="6ex-1G-col" id="hQs-tV-FaN"/>
+                <outlet property="numberLabel" destination="kyb-Ya-DbH" id="rYx-U8-p12"/>
+                <outlet property="numberLabelWidth" destination="kyb-Ya-DbH" id="QbP-Dk-x4F"/>
+            </connections>
+            <point key="canvasLocation" x="-3686" y="-1281"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eye" width="20" height="14"/>
+        <image name="eye_selected" width="20" height="14"/>
+        <image name="favorite" width="25" height="24"/>
+        <image name="lock" width="19" height="25"/>
+    </resources>
+</document>

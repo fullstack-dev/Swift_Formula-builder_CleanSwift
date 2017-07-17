@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FBCategoryListCell" customModule="FormulaBuilderCS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifw-3P-dfG" customClass="FBNumberLabel" customModule="FormulaBuilderCS" customModuleProvider="target">
+                        <rect key="frame" x="20" y="11" width="11" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dW7-zl-pu2">
+                        <rect key="frame" x="51" y="0.0" width="230" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="230" id="a5Z-nd-TTj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                        <color key="textColor" red="0.011764705882352941" green="0.011764705882352941" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjk-BC-R3W">
+                        <rect key="frame" x="51" y="43" width="269" height="0.0"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="WuR-Wj-VlI"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="wil-Xf-aIE">
+                        <rect key="frame" x="277" y="0.0" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="wil-Xf-aIE" secondAttribute="height" id="4EH-tE-4fr"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rjk-BC-R3W" firstAttribute="leading" secondItem="dW7-zl-pu2" secondAttribute="leading" id="13L-cq-zYq"/>
+                    <constraint firstAttribute="trailing" secondItem="wil-Xf-aIE" secondAttribute="trailing" id="2yl-cg-PUG"/>
+                    <constraint firstItem="dW7-zl-pu2" firstAttribute="leading" secondItem="ifw-3P-dfG" secondAttribute="trailing" constant="20" id="I7Y-Et-0Xm"/>
+                    <constraint firstItem="rjk-BC-R3W" firstAttribute="top" secondItem="wil-Xf-aIE" secondAttribute="bottom" id="Mg4-Tb-2mW"/>
+                    <constraint firstAttribute="bottom" secondItem="rjk-BC-R3W" secondAttribute="bottom" id="NbW-wN-2DR"/>
+                    <constraint firstItem="dW7-zl-pu2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="c5N-LK-PpI"/>
+                    <constraint firstItem="ifw-3P-dfG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="deq-vg-1Sf"/>
+                    <constraint firstAttribute="trailing" secondItem="rjk-BC-R3W" secondAttribute="trailing" id="lHJ-Gs-Fzm"/>
+                    <constraint firstItem="wil-Xf-aIE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nQQ-Kr-O1k"/>
+                    <constraint firstAttribute="bottom" secondItem="dW7-zl-pu2" secondAttribute="bottom" id="qcJ-si-w6E"/>
+                    <constraint firstItem="ifw-3P-dfG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yk3-gr-QXU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="dW7-zl-pu2" id="wUZ-eT-0TH"/>
+                <outlet property="numberLabel" destination="ifw-3P-dfG" id="nbX-Ux-s1S"/>
+            </connections>
+            <point key="canvasLocation" x="-220" y="12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="16" height="16"/>
+    </resources>
+</document>

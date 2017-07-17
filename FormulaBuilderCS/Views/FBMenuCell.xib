@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FBMenuCell" id="KGk-i7-Jjw" customClass="FBMenuCell" customModule="FormulaBuilderCS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfb-44-xPR" userLabel="Top Line 0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Lmw-HW-M1K"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAE-gt-FBI" userLabel="Top Line 1">
+                        <rect key="frame" x="55" y="1" width="265" height="1"/>
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="0.5" id="Hae-Of-JLp"/>
+                            <constraint firstAttribute="height" constant="0.5" id="rHO-Js-MnL"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SnK-jv-Ryh" userLabel="Bottom Line">
+                        <rect key="frame" x="0.0" y="43" width="320" height="0.0"/>
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="rvL-lg-JnD"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="aWX-Ci-ZlV">
+                        <rect key="frame" x="297" y="15.5" width="8" height="13"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jAE-gt-FBI" secondAttribute="trailing" id="1dk-Jp-uvN"/>
+                    <constraint firstItem="jAE-gt-FBI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="55" id="5SH-ed-tkU"/>
+                    <constraint firstItem="SnK-jv-Ryh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GNy-lm-Qrm"/>
+                    <constraint firstItem="Rfb-44-xPR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Qb9-U0-3vk"/>
+                    <constraint firstAttribute="trailing" secondItem="Rfb-44-xPR" secondAttribute="trailing" id="Sx0-PH-7e2"/>
+                    <constraint firstItem="Rfb-44-xPR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZPD-py-PCc"/>
+                    <constraint firstAttribute="trailing" secondItem="SnK-jv-Ryh" secondAttribute="trailing" id="aye-eH-qR1"/>
+                    <constraint firstItem="jAE-gt-FBI" firstAttribute="top" secondItem="Rfb-44-xPR" secondAttribute="bottom" id="e1q-dZ-K0g"/>
+                    <constraint firstAttribute="trailing" secondItem="aWX-Ci-ZlV" secondAttribute="trailing" constant="15" id="hZ7-9i-AXO"/>
+                    <constraint firstItem="aWX-Ci-ZlV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qQh-nW-HZb"/>
+                    <constraint firstAttribute="bottom" secondItem="SnK-jv-Ryh" secondAttribute="bottom" id="sZR-Gl-had"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrow" destination="aWX-Ci-ZlV" id="aij-MB-Abi"/>
+                <outlet property="bottomLine" destination="SnK-jv-Ryh" id="VHn-fT-z4p"/>
+                <outlet property="topLine0" destination="Rfb-44-xPR" id="8ar-uq-BKJ"/>
+                <outlet property="topLine1" destination="jAE-gt-FBI" id="5UO-LU-6lg"/>
+            </connections>
+            <point key="canvasLocation" x="-126" y="-135"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="8" height="13"/>
+    </resources>
+</document>
